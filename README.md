@@ -48,13 +48,14 @@ UnityとROS2の間の通信を可能にすることで、ROS2を用いたUnity�
 - Unity Hubへのサインインを求められるので、サインインをする。アカウントが無ければ作成する
 - InstallsからInstall Editorを選択し、Unity 6をインストール。或いはインストールするようポップアップが出る。
 
-### 4. ワークスペースの作成:
+### 4. Unity-ROS2間の統合:
 
+- ワークスペース作成
    ```bash
    mkdir -p unity_ws/src
    ```
 
-### 5. [ROS2 branch of the ROS-TCP-Endpoint](https://github.com/Unity-Technologies/ROS-TCP-Endpoint/tree/main-ros2)の追加:
+- [ROS2 branch of the ROS-TCP-Endpoint](https://github.com/Unity-Technologies/ROS-TCP-Endpoint/tree/main-ros2)の追加:
 
 
 ## 使用方法
