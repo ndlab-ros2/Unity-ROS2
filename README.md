@@ -36,4 +36,12 @@ UnityとROS2の間の通信を可能にすることで、ROS2を用いたUnity�
    ```bash
    sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/Unity_Technologies_ApS.gpg] https://hub.unity3d.com/linux/repos/deb stable main" > /etc/apt/sources.list.d/unityhub.list'
 
+- Unityのインストール
+   ```bash
+   sudo apt update
+   sudo apt-get install unityhub
+   　、、、
+
+
+
 ## 使用方法
