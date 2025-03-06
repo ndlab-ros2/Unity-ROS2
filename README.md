@@ -27,7 +27,7 @@ UnityとROS2の間の通信を可能にすることで、ROS2を用いたUnity�
 ### 1. ROS 2 Humbleのセットアップ:  
    [こちら](https://docs.ros.org/en/humble/Installation.html)の手順に従って、ROS 2 Humbleをインストールしてください。既にROS2 Humbleのインストールが完了していればこの操作は不要です。
    
-### 2. [Unity](https://unity.com/ja) のインストール:
+### 2. [Unity Hub](https://unity.com/ja/download) のダウンロード:
 - パブリックキーの追加
    ```bash
    wget -qO - https://hub.unity3d.com/linux/keys/public | gpg --dearmor | sudo tee /usr/share/keyrings/Unity_Technologies_ApS.gpg > /dev/null
@@ -36,7 +36,7 @@ UnityとROS2の間の通信を可能にすることで、ROS2を用いたUnity�
    ```bash
    sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/Unity_Technologies_ApS.gpg] https://hub.unity3d.com/linux/repos/deb stable main" > /etc/apt/sources.list.d/unityhub.list'
 
-- Unityのインストール
+- ダウンロード
    ```bash
    sudo apt update
    sudo apt-get install unityhub
