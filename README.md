@@ -24,7 +24,10 @@ UnityとROS2の間の通信を可能にすることで、ROS2を用いたUnity�
 ## インストール方法
 
 以下の手順に従ってパッケージのインストールを行います。
-### 1.Unityのインストール
+### 1. **ROS 2 Humble**のセットアップ:  
+   [こちら](https://docs.ros.org/en/humble/Installation.html)の手順に従って、ROS 2 Humbleをインストールしてください。既にROS2 Humbleのインストールが完了していればこの操作は不要です。
+   
+### 2.Unityのインストール:
 - パブリックキーの追加
 
 
