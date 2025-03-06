@@ -29,8 +29,11 @@ UnityとROS2の間の通信を可能にすることで、ROS2を用いたUnity�
    
 ### 2. [Unity](https://unity.com/ja) のセットアップ:
 - パブリックキーの追加
-   ```bash
-   wget -qO - https://hub.unity3d.com/linux/keys/public | gpg --dearmor | sudo tee /usr/share/keyrings/Unity_Technologies_ApS.gpg > /dev/null
+```bash
+wget -qO - https://hub.unity3d.com/linux/keys/public | gpg --dearmor | sudo tee /usr/share/keyrings/Unity_Technologies_ApS.gpg > /dev/null
+
+- パブリックキーの追加
+
 
 
 ## 使用方法
