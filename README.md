@@ -48,6 +48,10 @@ UnityとROS2の間の通信を可能にすることで、ROS2を用いたUnity�
 - Unity Hubへのサインインを求められるので、サインインをする。アカウントが無ければ作成する
 - InstallsからInstall Editorを選択し、Unity 6をインストール。或いはインストールするようポップアップが出る。
 
-### 3. [Unity](https://unity.com/) のインストール:
+### 4. ワークスペースの作成:
+
+   ```bash
+   mkdir -p unity_ws/src
+    ```
 
 ## 使用方法
