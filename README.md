@@ -2,8 +2,6 @@
 
 Unity-ROS2間の通信用パッケージ
 
-<img src="./picture/unity.png" style="width: 500px; height: auto;">
-
 ## 目次
 <!-- TOC -->
 
