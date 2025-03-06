@@ -56,6 +56,10 @@ UnityとROS2の間の通信を可能にすることで、ROS2を用いたUnity�
    ```
 
 - [ROS2 branch of the ROS-TCP-Endpoint](https://github.com/Unity-Technologies/ROS-TCP-Endpoint/tree/main-ros2)の追加:
+   ```bash
+   cd unity_ws/src
+   git clone https://github.com/Unity-Technologies/ROS-TCP-Endpoint.git
+   ```
 
 
 ## 使用方法
