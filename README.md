@@ -18,8 +18,8 @@ UnityとROS2の間の通信を可能にすることで、ROS2を用いたUnity�
 
 ## 開発環境
 
-Ubuntu Linux - Jammy Jellyfish (22.04)
-ROS 2 Humble Hawksbill
+- Ubuntu Linux - Jammy Jellyfish (22.04)
+- ROS 2 Humble Hawksbill
 
 ## インストール方法
 
