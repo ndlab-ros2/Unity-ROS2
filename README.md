@@ -78,9 +78,15 @@ UnityとROS2の間の通信を可能にすることで、ROS2を用いたUnity�
 
 - IPアドレスの変更
 
-  上記のコマンドによって自身のIPアドレスが出力されていることが確認できれば次のコマンドを実行する
+  上記のコマンドの実行によって出力された自身のIPアドレスを`your IP address`に書き換えて次のコマンドを実行する。
    ```bash
-   ros2 run ros_tcp_endpoint default_server_endpoint --ros-args -p ROS_IP:=<your IP address>
+   ros2 run ros_tcp_endpoint default_server_endpoint --ros-args -p ROS_IP:=your IP address
    ```
+
+上記のコマンドの出力が以下の様になっていれば変更完了です。
+
+`[INFO] [1741360093.885079373] [UnityEndpoint]: Starting server on your IP address.198:10000`
+
+
 
 ## 使用方法
