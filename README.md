@@ -83,9 +83,9 @@ UnityとROS2の間の通信を可能にすることで、ROS2を用いたUnity�
    ros2 run ros_tcp_endpoint default_server_endpoint --ros-args -p ROS_IP:=your IP address
    ```
 
-上記のコマンドの出力が以下の様になっていれば変更完了です。
+   上記のコマンドの出力が以下の様になっていれば変更完了です。
 
-`[INFO] [1741360093.885079373] [UnityEndpoint]: Starting server on your IP address.198:10000`
+   `[INFO] [1741360093.885079373] [UnityEndpoint]: Starting server on your IP address.198:10000`
 
 
 
