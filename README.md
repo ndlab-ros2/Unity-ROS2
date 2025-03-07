@@ -55,7 +55,7 @@ UnityとROS2の間の通信を可能にすることで、ROS2を用いたUnity�
    mkdir -p unity_ws/src
    ```
 
-- [ROS2 branch of the ROS-TCP-Endpoint](https://github.com/ndlab-ros2/Unity-ROS2/tree/main/ROS-TCP-Endpoint)と[ROS2_Package](https://github.com/ndlab-ros2/Unity-ROS2/tree/main/ros2_packages)の追加:
+- ROS2 branch of the [ROS-TCP-Endpoint](https://github.com/ndlab-ros2/Unity-ROS2/tree/main/ROS-TCP-Endpoint)と[ROS2_Package](https://github.com/ndlab-ros2/Unity-ROS2/tree/main/ros2_packages)の追加:
    ```bash
    cd unity_ws/src
    git clone https://github.com/ndlab-ros2/Unity-ROS2.git
