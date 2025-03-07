@@ -106,5 +106,8 @@ UnityとROS2の間の通信を可能にすることで、ROS2を用いたUnity�
    ```bash
    hostname -I
    ```
+-  `ROS Port`に自身で設定したポートを入力する。デフォルトは**10000**であるが、[IPアドレスの変更](#IPアドレスの変更)
+
+### 6. Unity Robotics Demoの実行:
 
 ## 使用方法
