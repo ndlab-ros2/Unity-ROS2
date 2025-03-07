@@ -71,11 +71,16 @@ UnityとROS2の間の通信を可能にすることで、ROS2を用いたUnity�
 ⚠️ `source install/setup.bash`ソースコマンドは２回実行する必要があります。1回目は`colcon build
 `ビルドを実行する際の環境設定を行い、2回目は新しくビルドされたパッケージを環境に追加します。
 
-- IPアドレスの変更
-
-   次のコマンドを実行して自身のIPアドレスを調べる。
+- IPアドレスの確認
    ```bash
    hostname -I
+   ```
+
+- IPアドレスの変更
+
+上記のコマンドによって自身のIPアドレスが出力されていることが確認できれば次のコマンドを実行する
+   ```bash
+   ros2 run ros_tcp_endpoint default_server_endpoint --ros-args -p ROS_IP:=<your IP address>
    ```
 
 ## 使用方法
