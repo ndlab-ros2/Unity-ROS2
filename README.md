@@ -77,8 +77,7 @@ UnityとROS2の間の通信を可能にすることで、ROS2を用いたUnity�
    ```
 
 - IPアドレスの変更
-
-上記のコマンドによって自身のIPアドレスが出力されていることが確認できれば次のコマンドを実行する
+   上記のコマンドによって自身のIPアドレスが出力されていることが確認できれば次のコマンドを実行する
    ```bash
    ros2 run ros_tcp_endpoint default_server_endpoint --ros-args -p ROS_IP:=<your IP address>
    ```
