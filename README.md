@@ -86,7 +86,7 @@ UnityとROS2の間の通信を可能にすることで、ROS2を用いたUnity�
 
    ○上記のコマンドの出力が以下の様になっていれば変更完了です。ただし、`<your IP address>`この部分には自身のIPアドレスが表示されます。
   
-   `[INFO] [1741360093.885079373] [UnityEndpoint]: Starting server on <your IP address>.198:10000`
+   `[INFO] [1741360093.885079373] [UnityEndpoint]: Starting server on <your IP address>:10000`
 
 
    ※もし、サーバーがデフォルトの 10000 とは異なるポートにする必要がある場合は、次のコマンドを実行してください。
