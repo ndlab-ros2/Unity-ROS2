@@ -68,7 +68,7 @@ UnityとROS2の間の通信を可能にすることで、ROS2を用いたUnity�
    source install/setup.bash
    ```
 
-⚠
+⚠️ **`source install/setup.bash`**ソースコマンドは２回実行する必要があります。1回目の
 
 
 ## 使用方法
