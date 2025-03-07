@@ -99,8 +99,12 @@ UnityとROS2の間の通信を可能にすることで、ROS2を用いたUnity�
 -  Unity Hubを起動し、必要であればサインインをする。
 -  `Projects`→`New project`から新しいプロジェクトを作成する。
 -  新しいプロジェクトを開き、`Window`→`Package Manager`でパッケージマネージャを起動
--  画面左上の**+**ボタンをクリックし、`Install package from git URL...`を選択して、ROS-TCP-Connector(リンクは[こちら](https://github.com/Unity-Technologies/ROS-TCP-Connector))のURLをコピー&ペーストして、**Add**ボタンをクリックしてROS-TCP-Connectorのパッケージを追加する。
+-  画面左上の`+`ボタンをクリックし、`Install package from git URL...`を選択して、ROS-TCP-Connector(リンクは[こちら](https://github.com/Unity-Technologies/ROS-TCP-Connector))のURLをコピー&ペーストして、**Add**ボタンをクリックしてROS-TCP-Connectorのパッケージを追加する。
 -  先程の操作によってUnityのメインメニューに**Robotics**というタブが追加されていることを確認して、`Robotics`→`ROS Settings`からROSの設定画面を表示
--  
+-  `Protocol`を**ROS2**に切り替える
+-  `ROS IP Address`に自身のIPアドレスを入力する。自身のIPアドレスが分からない場合は以下のコマンドを実行して、出力されるIPアドレスをコピー&ペーストする
+   ```bash
+   hostname -I
+   ```
 
 ## 使用方法
