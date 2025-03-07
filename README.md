@@ -68,7 +68,9 @@ UnityとROS2の間の通信を可能にすることで、ROS2を用いたUnity�
    source install/setup.bash
    ```
 
-⚠️ **`source install/setup.bash`**ソースコマンドは２回実行する必要があります。1回目の
+⚠️ `source install/setup.bash`ソースコマンドは２回実行する必要があります。1回目は`colcon build
+`ビルドで使用する環境の設定を行い、2回目は新しくビルドされたパッケージを環境に追加します。
 
+- IPの変更
 
 ## 使用方法
