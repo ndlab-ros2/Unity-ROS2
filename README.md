@@ -61,5 +61,14 @@ UnityとROS2の間の通信を可能にすることで、ROS2を用いたUnity�
    git clone https://github.com/ndlab-ros2/Unity-ROS2.git
    ```
 
+- ビルド
+   ```bash
+   source install/setup.bash
+   colcon build
+   source install/setup.bash
+   ```
+
+⚠
+
 
 ## 使用方法
