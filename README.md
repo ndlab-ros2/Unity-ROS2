@@ -211,8 +211,8 @@ UnityとROS2の間の通信を可能にすることで、ROS2を用いたUnity�
    ros2 topic list
    ```
 
-   ○以下の様な出力になっていればROS2とUnityの接続は完了
-   'data: Hello Unity!
+    以下の様な出力になっていればROS2とUnityの接続は完了
+      'data: Hello Unity!
       ---
       data: Hello Unity!
       ---
