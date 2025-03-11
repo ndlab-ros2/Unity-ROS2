@@ -171,3 +171,17 @@ UnityとROS2の間の通信を可能にすることで、ROS2を用いたUnity�
        }
    }
    ```
+
+-  Unityのメインメニューの`Hierarchy`にある`+`ボタンをクリックし、`Create Enpty`から空のGameObjectを作成する。(必要であればGameObjectの名前を変更しても良い)
+-  そのオブジェクト内にスクリプトを作成する。
+-  先程作成したスクリプトをオブジェクト内に貼り付ける
+-  ROS2側のエンドポイントの起動
+   ```bash
+   ros2 run ros_tcp_endpoint default_server_endpoint --ros-args -p ROS_IP:=your IP address
+   ```
+
+   ※もし、サーバーがデフォルトの 10000 とは異なるポートにする必要がある場合は、次のコマンドを実行してください。
+   ```bash
+   ros2 run ros_tcp_endpoint default_server_endpoint --ros-args -p ROS_IP:=your IP address -p ROS_TCP_PORT:=10000
+   ```
+⚠️ `your IP address`:自身のIPアドレスに変更してください。
