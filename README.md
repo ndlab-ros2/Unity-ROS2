@@ -130,4 +130,44 @@ UnityとROS2の間の通信を可能にすることで、ROS2を用いたUnity�
 -  「Built message path」の下部に表示される**unity_robotics_demo_msgs**サブフォルダーを展開し、「***msg***」の`Build 2 msgs`と「***srv***」の`Build 2 srvs`をクリックして、ROS.msgファイルと.srvファイルからC#スクリプトを作成する。
 
 ### 2. パブリッシャーの作成:
--  Unityのメインメニューで`Project`→`Generate ROS Messages...`より、メッセージブラウザーウィンドウを起動
+-  Unityのメインメニューで`Project`→`Assets`→`RosMessages`→`UnityRoboticsDemo`より、作成したC#スクリプトを編集する(C#スクリプトがない場合はその場で作成する)。
+-  c#スクリプトの名前は自分が分かりやすい名前に変更しておく。今回は例として`Ros Publisher Example`としている。
+-  次のコードをスクリプトに貼り付ける。
+   ```bash
+   using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Unity.Robotics.ROSTCPConnector;
+using RosMessageTypes.Std;
+
+public class MyPublisher : MonoBehaviour
+{
+    ROSConnection ros;
+    float time;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        // ROSコネクションの取得
+        ros = ROSConnection.GetOrCreateInstance();
+
+        // パブリッシャの登録
+        ros.RegisterPublisher<StringMsg>("my_topic");
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        time += Time.deltaTime;
+        if(time < 1.0f){
+            return;
+        }
+        time = 0.0f;
+
+        // メッセージのパブッシュ
+        StringMsg msg = new StringMsg("Hello Unity!");
+        ros.Publish("my_topic", msg);
+    }
+}
+   ```
