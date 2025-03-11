@@ -106,6 +106,9 @@ UnityとROS2の間の通信を可能にすることで、ROS2を用いたUnity�
 ![Image](https://github.com/user-attachments/assets/aa0e37b5-cc6b-490a-a8ff-a7926bd0d2ea)
 
 -  先程の操作によってUnityのメインメニューに**Robotics**というタブが追加されていることを確認して、`Robotics`→`ROS Settings`からROSの設定画面を表示
+
+![Image](https://github.com/user-attachments/assets/f6fda079-4141-4718-8a6c-e11668b6a646)
+
 -  `Protocol`を**ROS2**に切り替える
 -  `ROS IP Address`に自身のIPアドレスを入力する。自身のIPアドレスが分からない場合は以下のコマンドを実行して、出力されるIPアドレスをコピー&ペーストする
    ```bash
