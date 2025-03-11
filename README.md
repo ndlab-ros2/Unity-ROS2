@@ -120,6 +120,6 @@ UnityとROS2の間の通信を可能にすることで、ROS2を用いたUnity�
 ### 6. Unity Robotics Demoの実行:
 -  Unityのメインメニューで`Robotics`→`Generate ROS Messages...`より、メッセージブラウザーウィンドウを起動
 -  「ROS message path」の`Browse`ボタンをクリックし、'~/unity_ws/src/ros2_packages/unity_robotics_demo_msgs'をROSメッセージパスに設定する。
--  「Built message path」の下部に表示される**unity_robotics_demo_msgs**サブフォルダーを展開し、***msg***の`Build 2 msgs`と***srv***の`Build 2 srvs`
+-  「Built message path」の下部に表示される**unity_robotics_demo_msgs**サブフォルダーを展開し、「***msg***」の`Build 2 msgs`と「***srv***」の`Build 2 srvs`をクリックして、ROS.msgファイルと.srvファイルからC#スクリプトを作成する。
 
 ## 使用方法
