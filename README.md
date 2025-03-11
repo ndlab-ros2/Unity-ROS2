@@ -189,3 +189,36 @@ UnityとROS2の間の通信を可能にすることで、ROS2を用いたUnity�
    ○出力結果が以下の様になっていれば変更完了です。ただし、`<your IP address>`この部分には自身のIPアドレスが表示され、<Port number>には指定したポート番号が表示されます。(特に変更がなければデフォルトの**10000**が表示されます)
   
    `[INFO] [1741360093.885079373] [UnityEndpoint]: Starting server on <your IP address>:<Port number>`
+
+⚠️ このコマンドはUnityでシミュレーションを行う際には起動させたままにしておいてください
+
+-  Unityのメインメニューから'▶'ボタンを押す
+-  `Game`ウィンドウの左上部分にある接続ライトが赤色🟥から青色🟦に変化していることを確認する
+-  「ROS2側のエンドポイント起動」のコマンドで以下の様な出力が表示されているかを確認する
+
+   `[INFO] [1741678056.431790026] [UnityEndpoint]: Connection from <your IP address>`
+
+-  トピック出力の有無の確認
+   もう1つのterminalを開き、以下のコマンドを実行して、出力画面に`my_topic`というトピックが出力されているかを確認する。
+   ```bash
+   ros2 topic list
+   ```
+
+   ○トピックがあることが確認できれば'CTRL'と'C'を同時に押してコマンドを終了する
+   
+-  ROS2-Unity間の接続確認
+   ```bash
+   ros2 topic list
+   ```
+
+   ○以下の様な出力になっていればROS2とUnityの接続は完了
+   'data: Hello Unity!
+      ---
+      data: Hello Unity!
+      ---
+      data: Hello Unity!
+      ---
+      data: Hello Unity!
+      ---
+      data: Hello Unity!
+      ---'
